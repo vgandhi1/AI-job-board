@@ -1,0 +1,31 @@
+[project]
+name = "ai-job-board-backend"
+version = "2.0.0"
+description = "AI-powered job board with semantic search, fit analysis, and scraping/ingestion pipeline."
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn[standard]==0.24.0",
+    "sqlalchemy[asyncio]==2.0.23",
+    "asyncpg==0.29.0",
+    "psycopg2-binary==2.9.9",
+    "alembic==1.12.1",
+    "pgvector==0.2.3",
+    "pydantic[email]==2.5.0",
+    "pydantic-settings==2.1.0",
+    "python-dotenv==1.0.0",
+    "openai==1.3.5",
+    "playwright==1.40.0",
+    "beautifulsoup4==4.12.2",
+    "httpx==0.25.1",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
