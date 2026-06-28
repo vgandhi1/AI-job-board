@@ -1,5 +1,7 @@
 # AI Job Board
 
+> **⚠️ Archived (2026-06-28)** — This repository is read-only. Development continues in **[SmartFound](https://github.com/vgandhi1/SmartFound)**. Critical source is preserved at `SmartFound/legacy/ai-job-board/`. See [ARCHIVED.md](./ARCHIVED.md).
+
 An AI-powered job board that combines two subsystems in a single FastAPI app:
 
 1. **Search / AI** - semantic search over pgvector embeddings, plus on-demand
